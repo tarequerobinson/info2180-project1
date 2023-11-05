@@ -21,6 +21,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+function confirm(){
+
+    const val = document. querySelector('input').value;
+    var messageelement = document.querySelector('.message');
+
+
+    if (val == "" ){
+
+    messageelement.innerHTML ="Please enter a valid email address.";
+    console.log(messageelement.innerHTML);
+
+
+
+    }
+
+    else{
+    messageelement.innerHTML = " Thank you! Your email address " + val + "has been added to our mailing list!";
+    console.log(messageelement.innerHTML);
+    }
+
+
+}
+
+var subscribe = document.querySelector('button');
+// subscribe.preventDefault() ;
+// subscribe.onClick = confirm();
+
+subscribe.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default form submission    
+    confirm();
+});
+
+
 
 
 
