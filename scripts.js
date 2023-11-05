@@ -27,7 +27,7 @@ function confirm(){
     var messageelement = document.querySelector('.message');
 
 
-    if (val == "" ){
+    if (val == "" || (val.includes("@") == false) ){
 
     messageelement.innerHTML ="Please enter a valid email address.";
     console.log(messageelement.innerHTML);

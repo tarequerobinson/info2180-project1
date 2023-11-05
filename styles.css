@@ -89,7 +89,7 @@ font-size: 21px;
 }
 
 .cta a{
-color: #48BB78;
+/* color: #48BB78; */
 }
 
 
@@ -189,6 +189,23 @@ input{
 .newsletter .container h3{
 
 text-align: center;}
+
+.btn {
+
+    color: white;
+    background-color: #48BB78;
+    border-radius: 5px;
+    padding: 20px;
+    white-space: nowrap;
+    
+
+}
+
+.testing .container{
+
+    display: flex;
+    align-items: center;
+}
 
 
 
